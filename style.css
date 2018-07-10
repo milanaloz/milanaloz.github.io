@@ -1,0 +1,233 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i,400italic,700italic);
+
+@font-face {
+font-family: "FontAwesome";
+font-weight: normal;
+font-style : normal;
+       src : url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
+       src : url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"),
+             url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"),
+             url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"),
+             url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"),
+             url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+}
+
+* {
+	box-sizing:border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #2c71b8;
+    opacity: 1; /* Firefox */
+    font-size: 21px;
+    vertical-align: center;
+}
+
+html {
+	font-family: "Roboto";
+}
+
+body{
+	background-image: url(images/patt.png)
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+.row:after{
+	content:"";
+	clear:both;
+	display:block;
+}
+[class*="col-"] {
+	float:left;
+}
+.col-md-rest {
+	width: 23px;
+	height: 23px;
+}
+.col-md-220 {
+	width: 220px;
+	height: 38px;
+}
+.col-md-3 {
+	width: 25%;
+}
+.col-md-6 {
+	width: 50%;
+}
+.header{
+	padding: 25px 0;
+	background-color: rgba(255,255,255,0.75);
+} 
+.menu > li {
+	float: left;
+	width: 25%;
+	border-left: 1px solid #2c71b8;
+}
+.menu > li a {
+	font-size: 21px;
+	display:block;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	text-decoration: none;
+	color:#2c71b8;
+}
+.menu li a:hover {
+	background: #2c71b8;
+	color: white;
+	
+}
+.menu li:last child {
+	border-right: 1px solid #2c71b8;
+}
+
+.logo {
+	height: 47px;
+    margin-top: 5px;
+}
+
+/*.cart-icon {
+	height: 25px;
+}*/
+
+.icon {
+	width: 30px;
+    height: 30px;
+	margin: 3px;
+	background: #2c71b8;
+	float: right;
+}
+
+.icon:before {
+    font-family: FontAwesome;
+    content: "\f002";
+    color: white;
+	margin: 8px;
+
+}
+
+.icon {
+	padding: 6px 6px 6px 0;
+}
+
+.blue-back {
+	background: #2c71b8;
+}
+
+.white-back {
+	background: white;
+}
+
+.blue-border {
+	border: 1px solid #2c71b8;
+}
+
+input#search-form {
+	width: 160px;
+	outline: none;
+	border: none;
+	padding: 13px 7px 7px 20px;
+}
+
+.search {
+	margin-top: 7px;
+}
+
+.cart {
+	margin-left: 25px;
+	padding: 7px;
+}
+
+.cart > div {
+	width: 37px;
+    height: 37px;
+    padding: 7px;
+    background-color: #fff;
+}
+
+.cart > div > div {
+	margin: 0 auto;
+	width: 20px;
+    height: 20px;
+    padding: 0;
+	background: #fff url("images/cart.png");
+    background-repeat: no-repeat;
+}
+
+.cart:hover > div > div {
+	margin: 0 auto;
+	width: 20px;
+    height: 20px;
+    padding: 0;
+	background: #2c71b8 url("images/cart-hover.png");
+	background-repeat: no-repeat;
+	background-size: 18px 20px;
+}
+
+.cart:hover > div {
+    background-color: #2c71b8;
+}
+
+.cart:hover {
+	cursor: pointer;
+}
+
+.submenu{
+	visibility: hidden;
+	font-size: 21px;
+	position: fixed;
+	flex-direction: column;
+	height: 300px;
+	width: 285px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+}
+
+.hover:hover {
+	background: #2c71b8;
+}
+
+.hover:hover .submenu {
+	visibility: visible;
+	background: #2c71b8;
+}
+
+.hover:hover a {
+	color: white;
+}
+
+.hover li a:hover {
+	background: white;
+	color: #2c71b8;
+}
+.message{
+	position: relative;
+    top: -18px;
+    right: 20px;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: #2c71b8;
+    color: white;
+    padding: 5px 6px;
+    font-size: 11px;
+ }
+
+ .hover > a:after {
+ 	font-family: FontAwesome;
+    content: "\f107";
+    color: #2c71b8;
+	margin: 8px;
+ }
+ .hover:hover > a:after{
+ 	color:white;
+
+ }
